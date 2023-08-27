@@ -156,6 +156,92 @@ section {
     color: var(--main-color);
 }
 
+@media (max-width: 480px) {
+
+    .navi,
+    .contact,
+    .feature-icons,
+    .not-mobile {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .menu-toggle,
+    .menu-container {
+        display: none;
+    }
+}
+
+.js-menu-container {
+    height: 796px;
+    width: 428px;
+    padding: 40px 80px 35px 40px;
+}
+
+.mobile-list {
+    padding-bottom: 284px
+}
+
+.mobile-item {
+    margin-bottom: 40px;
+}
+
+.mobile-link {
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    line-height: 1.1;
+}
+
+.mobile-contact-list {
+    margin-bottom: 40px;
+}
+
+.tel-mobile {
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    font-size: 36px;
+    font-weight: 700px;
+    margin-bottom: 40px;
+}
+
+.mail-mobile {
+    letter-spacing: 0.02em;
+    line-height: 1.2;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.mobile-svg {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: var(--white-color);
+}
+
+.mobile-svg-list {
+    display: flex;
+    gap: 56px;
+}
+
+.menu-icon {
+    border: 1px solid var(--accent-color);
+    fill: var(--dark-color);
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
 .your-business {
     background-color: var(--dark-color);
     padding: 188px 0;

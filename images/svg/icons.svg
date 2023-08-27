@@ -118,5 +118,10 @@
             <path stroke-width=".64"
                 d="m6.263 15.205-.22-.21-3.307 3.132 11.651 11.114L38.864 5.89l-3.285-3.134-21.192 20.197-8.124-7.75z" />
         </symbol>
+        <symbol id="icon-menu-hamburger" viewBox="0 0 47 32">
+            <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4.3636"
+                d="M1.961 29.154h42.965M1.961 15.615h42.965M1.961 2.077h42.965"></path>
+        </symbol>
+
     </defs>
 </svg>
