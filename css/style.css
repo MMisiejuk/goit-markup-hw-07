@@ -96,6 +96,103 @@ section {
     padding-bottom: 24px;
 }
 
+@media only screen and (max-width: 480px) {
+    .header-nav {
+        opacity: 0;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .header-contact {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 122px;
+        
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .menu-toggle {
+        position: absolute;
+        left: 380px;
+        top: 24px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .text-section {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .main-text-list {
+        display: flex;
+        flex-direction: column;
+    }
+    .svg-text {
+    display: none;
+    }
+    .title {
+        
+        font-size: 36px;
+        line-height: 1.1;
+        font-weight: 700;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .doing-section {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .our-team-section {
+        padding-left: 82px;
+        padding-right: 82px;
+    }
+    .our-img-list {
+        display: flex;
+        flex-direction: column;
+        width: 264px;
+    }
+    }
+
+@media only screen and (max-width: 480px) {
+    .customers-list {
+        display: flex;
+        flex-direction: column;
+        column-gap: 16px;
+        flex-flow: wrap;
+        }
+}
+
+@media only screen and (max-width: 480px) {
+    .footer-wrap {
+        display: flex;
+        flex-direction: column;
+    }
+    .logo + .logo-footer {
+        margin-bottom: 18px;
+    }
+    .footer-text {
+        margin-bottom: 72px;
+    }
+    .footer-svg {
+        margin-bottom: 72px;
+    }
+    .footer-email {
+        width: 398px;
+        margin-bottom: 16px;
+    }
+    
+}
+
+
+
+
+
+
 .header-list {
     display: flex;
     gap: 40px;
@@ -178,6 +275,10 @@ section {
     height: 796px;
     width: 428px;
     padding: 40px 80px 35px 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--white-color);
 }
 
 .mobile-list {
@@ -252,6 +353,7 @@ section {
     box-shadow: inset rgba(46, 47, 66, 0.70);
 }
 
+
 .hero {
     font-size: 56px;
     font-weight: 700;
@@ -263,6 +365,8 @@ section {
     text-align: center;
     margin-bottom: 48px;
 }
+
+
 
 .hero-btn {
     font-size: 16px;
