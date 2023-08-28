@@ -789,10 +789,32 @@ section {
     padding-bottom: 100px;
 }
 
+@media only screen and (max-width: 1158px) {
+    .footer {
+        padding-top: 96px;
+        padding-bottom: 96px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .logo-footer-wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 .footer-wrap {
     display: flex;
     align-items: baseline;
 }
+
+@media only screen and (max-width: 480px) {
+    .footer-wrap {
+        flex-direction: column;
+    }
+}
+
 
 .footer-text {
     color: var(--light-color);
@@ -802,6 +824,13 @@ section {
     font-weight: 400;
     margin-top: 16px;
     max-width: 264px;
+}
+
+@media only screen and (max-width: 480px){
+    .footer-text {
+        max-width: 268px;
+        margin-bottom: 72px;
+    }
 }
 
 .space-footer {
@@ -814,6 +843,14 @@ section {
     letter-spacing: 0.03em;
     color: var(--white-color);
     padding-bottom: 16px;
+}
+
+@media only screen and (max-width: 480px) {
+    .social-footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .footer-list {
@@ -838,8 +875,20 @@ section {
     background-color: var(--success-color);
 }
 
+@media only screen and (max-width: 480px) {
+    .footer-svg {
+        margin-bottom: 72px;
+    }
+}
+
 .subscribe-footer {
     margin-left: 80px;
+}
+
+@media only screen and (max-width: 480px) {
+    .subscribe-footer {
+        margin: 0 auto;
+    }
 }
 
 .subscribe-title {
@@ -848,6 +897,14 @@ section {
     letter-spacing: 0.03em;
     color: var(--white-color);
     padding-bottom: 16px;
+}
+
+@media only screen and (max-width: 480px) {
+    .subscribe-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .footer-email, .footer-email:hover, .footer-email:focus {
@@ -866,6 +923,13 @@ section {
 
 .footer-email::placeholder {
     color: var(--white-color);
+}
+
+@media only screen and (max-width: 480px) {
+    .footer-email {
+        width: 100%;
+        margin-bottom: 24px;
+    }
 }
 
 .footer-btn, .footer-btn:hover, .footer-btn:focus {
@@ -891,6 +955,14 @@ section {
 
 .footer-btn svg {
     vertical-align: middle;
+}
+
+@media only screen and (max-width: 480px) {
+    .footer-btn {
+        justify-content: center;
+        align-items: center;
+        display: block;
+    }
 }
 
 .por-section {
