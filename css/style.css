@@ -55,13 +55,13 @@ img {
     margin: 0 auto;
 }
 
-.container {
+/* .container {
     max-width: 428px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-}
+} */
 
 
 @media screen and (min-width: 768px) {
@@ -98,6 +98,13 @@ section {
     align-items: center;
 }
 
+@media only screen and (max-width: 480px) {
+    .header-wrap {
+        padding: 16px 25px 16px 24px;
+    }
+}
+
+
 .logo {
     font-family: var(--raleway-font);
     color: var(--main-color);
@@ -122,6 +129,13 @@ section {
     margin-left: 76px;
     padding-top: 24px;
     padding-bottom: 24px;
+}
+
+@media only screen and (max-width: 480px) {
+    .header-nav, 
+    .contact {
+        display: none;
+    }
 }
 
 
@@ -166,10 +180,13 @@ section {
     color: var(--pressed-state);
 }
 
-.header-contact {
-    display: flex;
-    gap: 40px;
-    margin-left: 332px;
+
+@media only screen and (min-width: 1158px) {
+    .header-contact {
+            display: flex;
+            gap: 40px;
+            margin-left: 332px;
+        }
 }
 
 .contact {
@@ -186,32 +203,34 @@ section {
     color: var(--main-color);
 }
 
-@media (max-width: 480px) {
-
-    .navi,
-    .contact,
-    .feature-icons,
-    .not-mobile {
-        display: none;
+@media only screen and (max-width: 480px) {
+    .menu-toggle {
+        display: flex;
+        right: 16px;
+        position: absolute
     }
 }
 
-@media (min-width: 768px) {
-
-    .menu-toggle,
-    .menu-container {
+@media only screen and (min-width: 481px) {
+    .menu-toggle {
         display: none;
     }
 }
 
 .js-menu-container {
     height: 796px;
-    width: 428px;
+    width: 100%;
     padding: 40px 80px 35px 40px;
     position: fixed;
     top: 0;
     left: 0;
     background-color: var(--white-color);
+}
+
+@media only screen and (min-width: 481px) {
+    .js-menu-container {
+        display: none;
+    }
 }
 
 .mobile-list {
@@ -264,7 +283,7 @@ section {
     gap: 56px;
 }
 
-.menu-icon {
+/* .menu-icon {
     border: 1px solid var(--accent-color);
     fill: var(--dark-color);
     width: 24px;
@@ -274,7 +293,9 @@ section {
     justify-content: center;
     align-items: center;
     position: absolute;
-}
+    top: 24px;
+    right: 24px;
+} */
 
 .your-business {
     background-color: var(--dark-color);
@@ -826,8 +847,9 @@ section {
 @media only screen and (max-width: 480px) {
     .logo-footer-wrap {
         display: flex;
-        justify-content: center;
         align-items: center;
+        justify-content: center;
+        
     }
 }
 
@@ -850,7 +872,6 @@ section {
     line-height: 1.5;
     font-weight: 400;
     margin-top: 16px;
-    max-width: 264px;
 }
 
 @media only screen and (max-width: 480px){
@@ -859,6 +880,12 @@ section {
         align-items: center;
         justify-content: center;
         margin-bottom: 72px;
+    }
+}
+
+@media only screen and (min-width: 1158px) {
+    .footer-text {
+        max-width: 264px;
     }
 }
 
@@ -942,12 +969,11 @@ section {
     }
 }
 
-.footer-email, .footer-email:hover, .footer-email:focus {
+.footer-email {
     font-weight: 400;
     font-size: 12px;
     letter-spacing: 0.05em;
     line-height: 2;
-    width: 100%;
     height: 40px;
     border-radius: 4px;
     border: 1px solid var(--white-color);
@@ -963,10 +989,29 @@ section {
 @media only screen and (max-width: 480px) {
     .footer-email {
         margin-bottom: 24px;
+        width: 100%;
     }
 }
 
-.footer-btn, .footer-btn:hover, .footer-btn:focus {
+@media only screen and (min-width: 1158px) {
+    .footer-email,
+    .footer-email:hover,
+    .footer-email:focus {
+            font-weight: 400;
+            font-size: 12px;
+            letter-spacing: 0.05em;
+            line-height: 2;
+            width: 264px;
+            height: 40px;
+            border-radius: 4px;
+            border: 1px solid var(--white-color);
+            padding-left: 16px;
+            background-color: var(--dark-color);
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+        }
+}
+
+.footer-btn {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.06em;
@@ -979,7 +1024,14 @@ section {
     display: inline-block;
     text-align: center;
     vertical-align: baseline;
-    margin-left: 24px;
+}
+
+@media only screen and (min-width: 1158px) {
+    .footer-btn,
+    .footer-btn:hover,
+    .footer-btn:focus {
+            margin-left: 24px;
+        }
 }
 
 .footer-send-icon {
