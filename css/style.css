@@ -69,6 +69,10 @@ img {
 @media screen and (min-width: 768px) {
     .container {
         max-width: 768px;
+        padding-left: 16px;
+        padding-right: 16px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
@@ -191,6 +195,12 @@ section {
         }
 }
 
+@media only screen and (max-width: 1158px) and (min-width: 481px) {
+    .header-contact {
+        margin-left: 122px;
+    }
+}
+
 .contact {
     font-size: 16px;
     letter-spacing: 0.02em;
@@ -210,6 +220,7 @@ section {
         display: flex;
         right: 16px;
         position: absolute;
+        border: none;
     }
 }
 
@@ -313,12 +324,26 @@ section {
     .your-business {
         background-color: var(--dark-color);
         padding: 112px 0;
-        background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/hero/hero-bg.jpg);
+        background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/hero/hero-bg-mobile@1x.jpg);
         background-repeat: no-repeat;
         margin: 0 auto;
         background-size: cover;
         box-shadow: inset rgba(46, 47, 66, 0.70);
         height: 432px;
+    }
+}
+
+@media only screen and (max-width: 1158px) and (min-width: 481px) {
+    .your-business {
+        background-color: var(--dark-color);
+        padding: 136px 0;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/hero/Dark-bg-tablet@1x.jpg);
+        background-repeat: no-repeat;
+        margin: 0 auto;
+        background-size: cover;
+        box-shadow: inset rgba(46, 47, 66, 0.70);
+        height: 436px;
+        max-width: 768px;
     }
 }
 
@@ -344,6 +369,11 @@ section {
     }
 }
 
+@media only screen and (max-width: 1158px) and (min-width: 481px) {
+    .hero {
+        margin-bottom: 36px;
+    }
+}
 
 .hero-btn {
     font-size: 16px;
@@ -602,11 +632,11 @@ section {
 
 @media only screen and (max-width: 1158px) and (min-width: 481px) {
     .main-text-item {
-        display: flex;
         flex-wrap: wrap;
         column-gap: 24px;
     }
 }
+
 
 
 .svg-text {
@@ -811,7 +841,7 @@ section {
         }
 }
 
-@media only screen and (max-width: 1158px) and (min-width: 481px) {
+@media only screen and (max-width: 1157px) and (min-width: 481px) {
     .customers-list {
         display: inline-block;
         flex-direction: column;
