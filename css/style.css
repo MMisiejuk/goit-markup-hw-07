@@ -304,6 +304,7 @@ section {
     gap: 56px;
 }
 
+
 .menu-icon {
     border: 1px solid var(--accent-color);
     fill: var(--dark-color);
@@ -480,7 +481,7 @@ screen and (min-resolution: 2dppx) {
     margin-bottom: 16px;
 }
 
-
+/* @media only screen and (max-width: 1158px) and (min-width: 481px) */
 
 .modal-label {
     font-size: 12px;
