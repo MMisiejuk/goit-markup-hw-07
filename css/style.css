@@ -69,8 +69,8 @@ img {
 @media screen and (min-width: 768px) {
     .container {
         max-width: 768px;
-        padding-left: 16px;
-        padding-right: 16px;
+        padding-left: 15px;
+        padding-right: 15px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -192,6 +192,8 @@ section {
             display: flex;
             gap: 40px;
             margin-left: 332px;
+            justify-content: center;
+            align-items: center;
         }
 }
 
@@ -214,6 +216,12 @@ section {
 .contact:focus {
     color: var(--main-color);
 }
+
+/* @media only screen and (min-width: 1158px) {
+    .contact {
+        gap: 40px;
+    }
+} */
 
 @media only screen and (max-width: 480px) {
     .menu-toggle {
@@ -318,6 +326,17 @@ section {
     margin: 0 auto;
     background-size: cover;
     box-shadow: inset rgba(46, 47, 66, 0.70);
+    max-width: 1440px;
+    height: 600px;
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx) {
+    .your-business {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
+                url(../images/hero/people-office@x2.jpg);
+    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -977,6 +996,7 @@ section {
 @media only screen and (min-width: 1158px) {
     .footer-wrap {
         display: flex;
+        padding-right: 0;
     }
 }
 
@@ -1108,9 +1128,10 @@ section {
 
 @media only screen and (min-width: 1158px) {
     .subscribe-footer {
-        margin-left: 80px;
+        margin-left: 80px; 
     }
 }
+
 
 
 .subscribe-title {
