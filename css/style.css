@@ -694,6 +694,8 @@ screen and (min-resolution: 2dppx) {
         display: block;
         column-count: 2;
         text-align: justify;
+        padding-left: 16px;
+        padding-right: 16px;
     }
 }
 
@@ -918,6 +920,7 @@ screen and (min-resolution: 2dppx) {
         column-gap: 16px;
         flex-flow: wrap;
         justify-content: center;
+
         }
 }
 
@@ -926,6 +929,9 @@ screen and (min-resolution: 2dppx) {
         display: flex;
         flex-wrap: wrap;
         column-gap: 24px;
+        vertical-align: middle;
+        padding-left: 15px;
+        padding-right: 15px;
         justify-content: center;
     }
 }
