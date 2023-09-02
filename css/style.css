@@ -63,7 +63,6 @@ img {
 
 @media only screen and (max-width: 480px) {
 .container {
-    max-width: 428px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
@@ -358,14 +357,13 @@ section {
 
 .your-business {
     background-color: var(--dark-color);
-    padding: 188px 0;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/hero/hero.jpg);
+    padding: 112px 0;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/hero/hero-bg-mobile@1x.jpg);
     background-repeat: no-repeat;
     margin: 0 auto;
     background-size: cover;
     box-shadow: inset rgba(46, 47, 66, 0.70);
-    max-width: 1440px;
-    height: 600px;
+    height: 432px;
 }
 
 @media screen and (min-device-pixel-ratio: 2),
@@ -373,24 +371,12 @@ screen and (min-resolution: 192dpi),
 screen and (min-resolution: 2dppx) {
     .your-business {
         background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
-                url(../images/hero/people-office@x2.jpg),
+        url(../images/hero/people-office@x2.jpg),
                 url(../images/hero/Dark-bg-mobile@2x.jpg),
                 url(../images/hero/Dark-bg-tablet@2x.jpg);
     }
 }
 
-@media only screen and (max-width: 480px) {
-    .your-business {
-        background-color: var(--dark-color);
-        padding: 112px 0;
-        background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/hero/hero-bg-mobile@1x.jpg);
-        background-repeat: no-repeat;
-        margin: 0 auto;
-        background-size: cover;
-        box-shadow: inset rgba(46, 47, 66, 0.70);
-        height: 432px;
-    }
-}
 
 @media only screen and (max-width: 1199px) and (min-width: 481px) {
     .your-business {
@@ -406,32 +392,53 @@ screen and (min-resolution: 2dppx) {
     }
 }
 
+        @media only screen and (min-width: 1200px) {
+            .your-business {
+                background-color: var(--dark-color);
+                padding: 188px 0;
+                background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/hero/hero.jpg);
+                background-repeat: no-repeat;
+                margin: 0 auto;
+                background-size: cover;
+                box-shadow: inset rgba(46, 47, 66, 0.70);
+                max-width: 1440px;
+                height: 600px;
+            }
+        }
+
 
 
 .hero {
-    font-size: 56px;
     font-weight: 700;
     line-height: 1.1;
     letter-spacing: 0.02em;
     color: var(--white-color);
-    max-width: 496px;
     margin: 0 auto;
     text-align: center;
-    margin-bottom: 48px;
+    font-size: 36px;
+    margin-bottom: 72px;
+    max-width: 320px;
+    margin-bottom: 72px;
 }
 
-@media only screen and (max-width: 480px) {
+/* @media only screen and (max-width: 480px) {
     .hero {
-        font-size: 36px;
-        margin-bottom: 72px;
-        max-width: 320px;
+        
     }
-}
+} */
 
-@media only screen and (max-width: 1199px) and (min-width: 481px) {
+@media only screen and (min-width: 481px) {
     .hero {
         margin-bottom: 36px;
+        font-size: 56px;
+        max-width: 496px;
     }
+}
+
+@media only screen and (min-width: 1200px) {
+    .hero {
+        margin-bottom: 48px;
+        }
 }
 
 .hero-btn {
@@ -676,40 +683,36 @@ screen and (min-resolution: 2dppx) {
     }
 }
 
-.main-text-list {
+/* .main-text-list {
     gap: 24px;
-}
+} */
 
 
-@media only screen and (max-width: 480px) {
+ 
     .main-text-list {
         gap: 72px;
         display: flex;
         flex-direction: column;
     }
-}
+
 
 @media only screen and (max-width: 1199px) and (min-width: 481px) {
     .main-text-list {
         display: block;
         column-count: 2;
-        text-align: justify;
-        padding-left: 16px;
-        padding-right: 16px;
     }
 }
 
 @media only screen and (min-width: 1200px) {
     .main-text-list {
-        display: flex;
+        gap: 24px;
+        flex-direction: row;
     }
 }
 
 @media only screen and (max-width: 1199px) and (min-width: 481px) {
     .main-text-item {
-        gap: 24px;
         margin-bottom: 72px;
-        margin-right: 24px;
     }
 }
 
@@ -730,16 +733,16 @@ screen and (min-resolution: 2dppx) {
 }
 
 .title {
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
     color: var(--dark-color);
     margin-bottom: 8px;
     margin-top: 8px;
+    font-size: 36px;
+    line-height: 1.1;
+    font-weight: 700;
+    letter-spacing: 0.03em;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 767px) {
     .title {
         display: flex;
         justify-content: center;
@@ -747,12 +750,13 @@ screen and (min-resolution: 2dppx) {
         }
     }
 
-@media only screen and (max-width: 1199px) {
+
+@media only screen and (min-width: 1200px) {
     .title {
-        font-size: 36px;
-        line-height: 1.1;
-        font-weight: 700;
-        letter-spacing: 0.03em;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
     }
 }
 
@@ -761,20 +765,19 @@ screen and (min-resolution: 2dppx) {
     font-size: 16px;
     letter-spacing: 0.02em;
     line-height: 1.5;
-    font-weight: 400;
+    font-weight: 500;
+    margin: 0 auto;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 1199px) and (min-width: 481px) {
     .main-text {
-        max-width: 396px;
-        margin: 0 auto;
+        max-width: 356px;
     }
 }
 
-@media only screen and (max-width: 1199px) {
+@media only screen and (min-width: 1200px) {
     .main-text {
-        font-weight: 500;
-        max-width: 356px;
+        font-weight: 400;
     }
 }
 
@@ -816,26 +819,24 @@ screen and (min-resolution: 2dppx) {
 
 .our-img-list {
     display: flex;
-    gap: 24px;
+    gap: 72px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (min-width: 768px) {
     .our-img-list {
-            justify-content: center;
-            max-width: 264px;
-            gap: 72px;
-            align-items: center;
-            flex-wrap: wrap;
-            margin: 0 auto;
-        }
+        gap: 24px;
+        
+    }
 }
 
-@media only screen and (max-width: 1199px) and (min-width: 481px) {
+/* @media only screen and (max-width: 1199px) and (min-width: 481px) {
     .our-img-list {
         flex-wrap: wrap;
         justify-content: center;
     }
-}
+} */
 
 .our-team {
     border: 1px solid var(--accent-color);
@@ -847,11 +848,11 @@ screen and (min-resolution: 2dppx) {
     text-align: center;
 }
 
-@media only screen and (max-width: 1199px) and (min-width: 481px) {
+/* @media only screen and (max-width: 1199px) and (min-width: 481px) {
     .our-team {
         margin-bottom: 64px;
     }
-}
+} */
 
 
 .members {
@@ -911,18 +912,19 @@ screen and (min-resolution: 2dppx) {
 .customers-list {
     fill: var(--subtle-text);
     gap: 24px;
-}
-
-@media only screen and (max-width: 480px) {
-    .customers-list {
-        display: flex;
+    display: flex;
         flex-direction: column;
         column-gap: 16px;
         flex-flow: wrap;
         justify-content: center;
+}
+
+/* @media only screen and (max-width: 480px) {
+    .customers-list {
+        
 
         }
-}
+} */
 
 @media only screen and (max-width: 1199px) and (min-width: 481px) {
     .customers-list {
@@ -945,7 +947,7 @@ screen and (min-resolution: 2dppx) {
 }
 
 .customers-link {
-    width: 168px;
+    width: 190px;
     height: 88px;
     border-radius: 4px;
     border: 1px solid var(--subtle-text);
@@ -956,9 +958,9 @@ screen and (min-resolution: 2dppx) {
     transition: fill 250ms var(--transition), border-color 250ms var(--transition)
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (min-width: 481px) {
     .customers-link {
-    width: 190px;
+    width: 168px;
     }
 }
 
@@ -1054,7 +1056,7 @@ screen and (min-resolution: 2dppx) {
     }
 }
 
-@media only screen and (min-width: 1199px) {
+@media only screen and (min-width: 1200px) {
     .tab-logo-social {
         vertical-align: baseline;
         display: flex;
